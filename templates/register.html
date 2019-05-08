@@ -8,29 +8,30 @@
         <tr>
             <td><label for="username" >Username</label></td>
             <td>
-                <input name="username" type="text" pattern="[A-Za-z0-9]+" oninvalid="setCustomValidity('Please enter an alphanumeric username')" required>
+                <input name="username" type="text">
             </td>
             <td>{{ username_error }}</td>
         </tr>
         <tr>
             <td><label for="password">Password</label></td>
             <td>
-                <input name="password" type="password" required>
+                <input name="password" type="password">
             </td>
             <td>{{ password_error }}</td>
         </tr>
         <tr>
             <td><label for="verify">Verify Password</label></td>
             <td>
-                <input name="verify" type="password" required>
+                <input name="verify" type="password">
             </td>
             <td>{{ verify_error }}</td>
         </tr>
         <tr>
             <td><label for="email">E-mail</label></td>
             <td>
-                <input name="email" type="email">
+                <input name="email" type="text">
             </td>
+            <td> {{ email_error}}</td>
         </tr>
     </table>
     <input type="submit" value="Register">
